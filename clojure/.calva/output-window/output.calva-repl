@@ -1,0 +1,864 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+;
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+; Starting Jack-in: pushd c:\Users\Daniel\Documents\GitHub\aoc2024\clojure & java -jar c:\Users\Daniel\.vscode\extensions\betterthantomorrow.calva-2.0.481\deps.clj.jar -Sdeps "{:deps {nrepl/nrepl {:mvn/version,\"1.1.1\"},cider/cider-nrepl {:mvn/version,\"0.47.1\"}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
+; Using host:port 127.0.0.1:60576 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+;
+; WARNING: read-line already refers to: #'clojure.core/read-line in namespace: day1.core, being replaced by: #'day1.core/read-line
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+#'day1.core/part1
+clj꞉day1.core꞉> 
+#function[day1.core/part1]
+clj꞉day1.core꞉> 
+([5 8]
+ [2 6]
+ [4 8]
+ [2 0]
+ [2 6]
+ [8 5]
+ [9 6]
+ [8 7]
+ [3 9]
+ [7 8]
+ [3 4]
+ [2 9]
+ [2 1]
+ [2 6]
+ [4 2]
+ [2 7]
+ [7 4]
+ [9 7]
+ [5 5]
+ [7 3]
+ [7 0]
+ [2 3]
+ [3 5]
+ [3 9]
+ [4 7]
+ [9 2]
+ [4 6]
+ [9 1]
+ [7 8]
+ [3 7]
+ [1 1]
+ [4 4]
+ [2 5]
+ [6 9]
+ [4 8]
+ [3 1]
+ [2 1]
+ [5 8]
+ [2 4]
+ [4 4]
+ [1 4]
+ [6 7]
+ [4 3]
+ [2 3]
+ [9 6]
+ [3 5]
+ [7 1]
+ [3 3]
+ [5 1]
+ [9 9]
+ ...)
+clj꞉day1.core꞉> 
+#'day1.core/part1
+clj꞉day1.core꞉> 
+; Syntax error compiling at (c:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:0:0).
+; Unable to resolve symbol: inputa in this context
+clj꞉day1.core꞉> 
+["58990   83989"
+ "26183   15707"
+ "48195   12659"
+ "20176   26012"
+ "26730   42699"
+ "85161   27706"
+ "96982   95631"
+ "87996   58243"
+ "39657   41171"
+ "78872   33231"
+ "34487   72728"
+ "29811   99268"
+ "21721   49694"
+ "26489   66506"
+ "42015   20464"
+ "27364   97109"
+ "74634   96288"
+ "97761   76904"
+ "55760   27706"
+ "73395   44236"
+ "70292   87279"
+ "23732   31037"
+ "35979   98965"
+ "39607   13469"
+ "47127   79924"
+ "92247   33911"
+ "46961   33231"
+ "91221   31037"
+ "78652   83821"
+ "37026   62907"
+ "11525   26730"
+ "44193   92319"
+ "25735   33249"
+ "69120   32589"
+ "48384   46622"
+ "31056   71217"
+ "21738   33911"
+ "58732   61515"
+ "24566   33911"
+ "44699   25959"
+ "14669   87970"
+ "67130   25959"
+ "43796   87726"
+ "23106   54813"
+ "96034   67811"
+ "35340   98556"
+ "71868   97692"
+ "33492   54616"
+ "51373   35614"
+ "99072   95208"
+ ...]
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+([58990 83989]
+ [26183 15707]
+ [48195 12659]
+ [20176 26012]
+ [26730 42699]
+ [85161 27706]
+ [96982 95631]
+ [87996 58243]
+ [39657 41171]
+ [78872 33231]
+ [34487 72728]
+ [29811 99268]
+ [21721 49694]
+ [26489 66506]
+ [42015 20464]
+ [27364 97109]
+ [74634 96288]
+ [97761 76904]
+ [55760 27706]
+ [73395 44236]
+ [70292 87279]
+ [23732 31037]
+ [35979 98965]
+ [39607 13469]
+ [47127 79924]
+ [92247 33911]
+ [46961 33231]
+ [91221 31037]
+ [78652 83821]
+ [37026 62907]
+ [11525 26730]
+ [44193 92319]
+ [25735 33249]
+ [69120 32589]
+ [48384 46622]
+ [31056 71217]
+ [21738 33911]
+ [58732 61515]
+ [24566 33911]
+ [44699 25959]
+ [14669 87970]
+ [67130 25959]
+ [43796 87726]
+ [23106 54813]
+ [96034 67811]
+ [35340 98556]
+ [71868 97692]
+ [33492 54616]
+ [51373 35614]
+ [99072 95208]
+ ...)
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+;
+; Syntax error macroexpanding clojure.core/defn at (C:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:13:1).
+; () - failed: Insufficient input at: [:fn-name] spec: :clojure.core.specs.alpha/defn-args
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+;
+; Syntax error macroexpanding clojure.core/let at (C:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:14:3).
+; [first-col (sort) (map first input)] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+#'day1.core/find-diffs
+clj꞉day1.core꞉> 
+; Syntax error compiling at (c:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:21:3).
+; Unable to resolve symbol: find-difs in this context
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+;
+; Syntax error compiling at (C:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:21:3).
+; Unable to resolve symbol: find-difs in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+(8
+ 0
+ 183
+ 275
+ 308
+ 580
+ 660
+ 968
+ 1003
+ 1115
+ 1165
+ 1214
+ 1314
+ 1293
+ 997
+ 1018
+ 1098
+ 647
+ 386
+ 362
+ 301
+ 503
+ 539
+ 488
+ 494
+ 642
+ 860
+ 775
+ 754
+ 646
+ 586
+ 670
+ 519
+ 324
+ 328
+ 629
+ 724
+ 731
+ 837
+ 983
+ 1185
+ 1200
+ 1274
+ 1346
+ 1419
+ 1430
+ 1221
+ 1152
+ 1248
+ 1173
+ ...)
+clj꞉day1.core꞉> 
+#'day1.core/part1
+clj꞉day1.core꞉> 
+2113135
+clj꞉day1.core꞉> 
+(part1)
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+2113135
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+;
+; Syntax error macroexpanding clojure.core/defn at (C:\Users\Daniel\Documents\GitHub\aoc2024\clojure\src\day1\core.clj:27:1).
+; () - failed: Insufficient input at: [:fn-tail] spec: :clojure.core.specs.alpha/defn-args
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+#'day1.core/part2
+clj꞉day1.core꞉> 
+19097157
+clj꞉day1.core꞉> 
+19097157
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉day1.core꞉> 
+; Running tests for the following namespaces:
+;   day1.core
+;   day1.core-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉day1.core꞉> 
+; Evaluating file: download_day.clj
+;
+; ; clj  user
+; Execution error (FileNotFoundException) at user/eval11178 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11183 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11188 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11193 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11198 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11203 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11208 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11213 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11218 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11223 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11228 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11233 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11238 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11243 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11248 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11253 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11258 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11263 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11268 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11273 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11278 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11283 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11288 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11293 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11298 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 
+; Evaluating file: download_day.clj
+;
+; Execution error (FileNotFoundException) at user/eval11303 (download_day.clj:3).
+; Could not locate babashka/http_client__init.class, babashka/http_client.clj or babashka/http_client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file download_day.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉user꞉> 
+; Running tests for the following namespaces:
+;   user
+;   user-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉user꞉> 

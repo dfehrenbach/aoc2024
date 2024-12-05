@@ -34,10 +34,6 @@
   (let [sorted (sort (by-rules-sort rules) update-order)]
     (= sorted update-order)))
 
-(defn collect-in-order-updates [rules update-order]
-  (when (is-in-order? rules update-order)
-    update-order))
-
 (defn get-middle-value [update-order]
   (let [middle-index (int (/ (count update-order) 2))]
     (get update-order middle-index)))
@@ -46,20 +42,16 @@
   (let [ordering-rules (convert-rules-to-map (first input))
         update-order (convert-update-order-to-vector (drop 1 (second input)))]
     (->> update-order
-         (filter #(collect-in-order-updates ordering-rules %))
+         (filter #(is-in-order? ordering-rules %))
          (map get-middle-value)
          (map read-string)
          (reduce +))))
-
-(defn collect-out-of-order-updates [rules update-order]
-  (when-not (is-in-order? rules update-order)
-    update-order))
 
 (defn part2 []
   (let [ordering-rules (convert-rules-to-map (first input))
         update-order (convert-update-order-to-vector (drop 1 (second input)))]
     (->> update-order
-         (filter #(collect-out-of-order-updates ordering-rules %))
+         (remove #(is-in-order? ordering-rules %))
          (mapv #(vec (sort (by-rules-sort ordering-rules) %)))
          (mapv get-middle-value)
          (map read-string)
